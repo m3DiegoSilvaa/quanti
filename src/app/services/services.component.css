@@ -1,11 +1,41 @@
-.main-container{
-    height: 75em;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0; /* Asegura que no hay margen en el body */
+    overflow: hidden; /* Oculta el scrollbar estándar del body */
+}
+
+.main{
+    height: 100%;
     width: 100%;
-    padding-top: 5em;
     background-color: #0A0E1A;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Oculta el scrollbar estándar */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main::-webkit-scrollbar {
+    width: 1em;
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: #65B4FD;
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+.main::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .first-container{
+    padding-top: 5em;
     background-color: #0A0E1A;
     height: 25em;
     flex-direction: column;
@@ -15,12 +45,12 @@
 }
 
 .box-1{
-    width: 70%;
+    width: 90%;
 }
 
 .second-container{
     background-color: #ffffff;
-    height: 45em;
+    height: 60em;
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
@@ -74,11 +104,10 @@
 
 .third-container{
     background-color: #0A0E1A;
-    height: 45em;
+    height: 50em;
     flex-direction: column;
     display: flex;
     align-items: center;
-    padding-bottom: 1em;
 }
 
 .box-3{
@@ -106,10 +135,11 @@
 .button {
     width: 40%;
     height: 2em;
-    border-radius: 10px;
-    background-color:#0A0E1A;
+    border-radius: 5em;
+    background-color:#65B4FD;
     font-size: 1.5em;
     color: #fff;
+    border: 0;
 }
 
 .box-hover {

@@ -13,6 +13,8 @@ import { MisionComponent } from './mision/mision.component';
 import { VisionComponent } from './vision/vision.component';
 import { ValoresComponent } from './valores/valores.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import {MatStepperModule} from '@angular/material/stepper';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import { ContactoComponent } from './contacto/contacto.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
