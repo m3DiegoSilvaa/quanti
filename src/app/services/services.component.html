@@ -1,0 +1,145 @@
+<div class="main-container">
+    <div class="first-container">
+        <div class="container-title">
+            <h1>¿Que servicios ofrecemos?</h1>
+        </div>
+        <div class="box-1">
+            <p style="color: white; text-align: center; font-size: 1.5em;">Nuestro servicio de SOCaaS es una solución integral de seguridad cibernetica que ofrece la protección avanzada contra las amenazas digitales. Al compartir la operaciòn y gestiòn de centro de operaciones de seguridad, permitimos que las organizaciones se enfoquen en sus actividades esenciales mientras confìan en nuestra experiencia y tecnologìa para proteger su infraestructura de cualquier amenaza cibernética</p>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="container-title">
+            <h1>¿Que resolvemos?</h1>
+        </div>
+        <div class="container-row-holder">
+            <div class="box-2">
+                <h2>Monitoreo de Red en Tiempo Real</h2>
+                <p>Permite una vigilancia constante de la red, identificando cualquier actividad sospechosa o anormal en tiempo real.</p>
+            </div>
+            <div class="box-2">
+                <h2>Análisis de Tráfico y Comportamiento</h2>
+                <p>Analiza los patrones de tráfico y comportamiento para detectar actividades anómalas y posibles amenazas.</p>
+            </div>
+            <div class="box-2">
+                <h2>Gestión y Correlación de Logs</h2>
+                <p>Centraliza y analiza registros de eventos de múltiples fuentes para identificar correlaciones y patrones que pueden indicar amenazas.</p>
+            </div>
+            <div class="box-2">
+                <h2>Detección de Malware y Ransomware</h2>
+                <p>Identifica y bloquea actividades maliciosas, incluidos programas de software malicioso y ransomware, para prevenir infecciones y ataques.</p>
+            </div>
+            <div class="box-2">
+                <h2>Análisis de Vulnerabilidades y Penetración </h2>
+                <p>Evalúa la infraestructura en busca de debilidades potenciales y simula ataques para identificar áreas que necesitan reforzarse.</p>
+            </div>
+            <div class="box-2">
+                <h2>Supervisión de Actividades de Usuarios</h2>
+                <p>Realiza un seguimiento de las acciones de los usuarios para detectar actividades sospechosas o no autorizadas que podrían indicar intentos de acceso no autorizado.</p>
+            </div>
+            <div class="box-2 last-box">
+                <h2>Respuesta ante Incidentes y Recuperación</h2>
+                <p>Realiza un seguimiento de las acciones de los usuarios para detectar actividades sospechosas o no autorizadas que podrían indicar intentos de acceso no autorizado.</p>
+            </div>
+        </div>
+    </div>
+    <div class="third-container">
+        <div class="container-title">
+            <h1>Unete a Nuestros Servicios</h1>
+        </div>
+        <div style="width: 70%; margin-bottom: 1em;">
+            <p style="color: white; text-align: center; font-size: 1.5em;">Ofrecemos tres modalidades de servicio: Básico, Intermedio y Premium, cada uno con características  y funciones crecientes para satisfacer las necesidades específicas de seguridad de cada cliente.  Además contamos con varios paquetes de servicios disponibles dentro de cada nivel, permitiendo una mayor personalización del sistema. </p>
+        </div>
+        <div class="container-row-holder">
+            <div class="box-3">
+                <h2 style="text-align: center;">Nivel de servicio: Básico</h2>
+                <img src="https://cdn-icons-png.flaticon.com/128/2644/2644981.png" alt="" style="width: 10em; height: 10em;">
+                <div class="button-container">
+                    <button class="button" (click)="toggleBox1()">Detalles</button>
+                    <button class="button">Cotizar</button>
+                </div>
+                <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible1 }">
+                    <button class="close-button" (click)="toggleBox1()">X</button>
+                    <div style="margin-right: 2em;">
+                        <h2>Vigilancia</h2>
+                        <ul>
+                            <li>Monitoreo en tiempo real de eventos de seguridad.</li>
+                            <li>Detección y alertas ante amenazas básicas.</li>
+                            <li>Reportes mensuales de actividades y alertas.</li>
+                            <li>Acceso a soporte técnico durantes horas hábiles.</li>
+                        </ul>                      
+                        <h2>Control Esencial</h2>
+                        <ul>
+                            <li>Análisis de vulnerabilidades periódicas.</li>
+                            <li>Detección de malware y ransomware avanzado.</li>
+                            <li>Análisis de comportamiento de usuarios.</li>
+                            <li>Alertas de seguridad priorizadas.</li>
+                            <li>Soporte técnico extendido.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-3">
+                <h2 style="text-align: center;">Nivel de servicio intermedio </h2>
+                <img src="https://cdn-icons-png.flaticon.com/128/755/755091.png" alt="" style="width: 10em; height: 10em;">
+                <div class="button-container">
+                    <button class="button" (click)="toggleBox2()">Detalles</button>
+                    <button class="button">Cotizar</button>
+                </div>
+                <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible2 }">
+                    <button class="close-button" (click)="toggleBox2()">X</button>
+                    <div style="margin-right: 2em;">
+                    <h2>Defensa Continua</h2>
+                    <ul>
+                        <li>Monitoreo y análisis avanzado de tráfico de red.</li>
+                        <li>Detección y respuesta ante amenazas persistentes.</li>
+                        <li>Gestión y correlación avanzada de logs.</li>
+                        <li>Evaluación mensual de vulnerabilidades y reportes detallados.</li>
+                        <li>Alertas de seguridad con respuesta remota.</li>
+                        <li>Soporte técnico extendido con tiempos de respuesta mejorados.</li>
+                    </ul>                      
+                    <h2>Protección integral</h2>
+                    <ul>
+                        <li>Análisis de amenazas en tiempo real. </li>
+                        <li>Análisis de comportamiento de aplicaciones.</li>
+                        <li>Evaluación trimestral de vulnerabilidades con recomendaciones específicas.</li>
+                        <li>Alertas de seguridad con análisis de impacto.</li>
+                        <li>Soporte técnico 24/7.</li>
+                      </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="box-3">
+                <h2 style="text-align: center;">Nivel de servicio: Premium</h2>
+                <img src="https://cdn-icons-png.flaticon.com/128/2040/2040375.png" alt="" style="width: 10em; height: 10em;">
+                <div class="button-container">
+                    <button class="button" (click)="toggleBox3()">Detalles</button>
+                    <button class="button">Cotizar</button>
+                </div>
+                <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible3 }">
+                    <button class="close-button" (click)="toggleBox3()">X</button>
+                    <div style="margin-right: 2em;">
+                    <h2>Seguridad Avanzada</h2>
+                    <ul>
+                        <li>Monitoreo exhaustivo de la red y sistemas críticos.</li>
+                        <li>Detección y respuesta proactiva ante amenazas complejas.</li>
+                        <li>Gestión integral de logs con análisis predictivo.</li>
+                        <li>Evaluación mensual de vulnerabilidades con parches recomendados.</li>
+                        <li>Alertas de seguridad con inteligencia contextual.</li>
+                        <li>Soporte técnico 24/7 con tiempos de respuesta prioritarios.</li>
+                    </ul>                      
+                    <h2>Defensa de Élite</h2>
+                    <ul>
+                        <li>Análisis de amenazas avanzadas y APT (Amenazas Persistentes Avanzadas).</li>
+                        <li>Respuesta inmediata a incidentes críticos.</li>
+                        <li>Evaluación continua de vulnerabilidades con parches y mitigaciones.</li>
+                        <li>Alertas de seguridad con correlación de eventos en tiempo real.</li>
+                        <li>Acceso a expertos en seguridad para consultas estratégicas.</li>
+                        <li>Soporte técnico 24/7 con prioridad máxima.</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,166 @@
+.main-container{
+    height: 75em;
+    width: 100%;
+    padding-top: 5em;
+    background-color: #0A0E1A;
+}
+
+.first-container{
+    background-color: #0A0E1A;
+    height: 25em;
+    flex-direction: column;
+    justify-content:space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.box-1{
+    width: 70%;
+}
+
+.second-container{
+    background-color: #ffffff;
+    height: 45em;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.container-row-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 10em);
+    gap: 10px; /* Espacio entre las celdas */
+    width: 90%;
+}
+
+.box-2{
+    padding:15px;
+    max-width: 26em;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-2 h2 {
+    text-align: center;
+}
+
+.box-2 p {
+    text-align: justify;
+}
+
+.last-box {
+    grid-column: 2 / 4; /* Ocupa columnas 2 y 3 */
+  }
+
+.container-title {
+    width: 90%;
+    margin-top: 1em;
+    height: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container-title h1 {
+    color: #65B4FD;
+    font-size: 3em;
+}
+
+.third-container{
+    background-color: #0A0E1A;
+    height: 45em;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.box-3{
+    padding:15px;
+    max-width: 26em;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 25em;
+    position: relative;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    width: 40%;
+    height: 2em;
+    border-radius: 10px;
+    background-color:#0A0E1A;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.box-hover {
+    margin-top: 107%;
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Opacidad del 80% */
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    height: 25em;
+    width: 25em;
+    border-radius: 1em;
+    overflow-y: auto;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .box-hover h2 {
+    text-align: center;
+  }
+
+  .box-hover ul {
+    text-align: justify;
+  }
+
+  .box-hover ul li {
+    font-size: 1.2em;
+  }
+  
+  .show-box {
+    top: -110%; /* Ajusta la distancia para que se muestre encima del div padre */
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
