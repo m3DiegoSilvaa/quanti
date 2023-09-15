@@ -14,6 +14,11 @@ import { VisionComponent } from './vision/vision.component';
 import { ValoresComponent } from './valores/valores.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -29,10 +34,16 @@ import {MatStepperModule} from '@angular/material/stepper';
     ContactoComponent
   ],
   imports: [
+    MatRadioModule,
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatStepperModule
+    MatStepperModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

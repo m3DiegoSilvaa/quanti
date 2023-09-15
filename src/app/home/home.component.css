@@ -37,7 +37,7 @@ body {
 
 
 .first-container{
-    background-color: #0A0E1A;
+    background-color: #ffffff;
     height: 25em;
     flex-direction: row;
     justify-content:space-evenly;
@@ -47,21 +47,25 @@ body {
 }
 
 .first-container1{
-    width: 30%;
+    width: 40%;
     height: 18em;
-    padding: 1em;
-    background-color: white;
     border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .first-container1 p {
     text-align: justify;
+    font-size: 1.3em;
     
 }
 
-.first-container1 h2 {
+.first-container1 h1 {
     text-align: center;
     font-weight: bold;
+    font-size: 3em;
 }
 
 .first-container2{
@@ -72,12 +76,13 @@ body {
 }
 
 .second-container{
-    background-color: #ffffff;
-    height: 25em;
+    background-color: #0A0E1A;
+    height: 20em;
     flex-direction: column;
+    justify-content:space-evenly;
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    align-items: center;
+    margin-top: 10em;
 }
 
 .container-title {
@@ -111,11 +116,12 @@ body {
 }
 
 .box p {
-    text-align: center;
-    
+    text-align: center;  
+    color: white;  
 }
 
 .box h2 {
+    color: white;  
     text-align: center;
     font-weight: bold;
 }
@@ -244,13 +250,14 @@ border-radius: 1em;
 
 }
 
+
 .ch {
   position: absolute;
   top: 70%;
   left: 4%;
   transform: translateY(-50%);
 
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: hsla(var(--h) var(--s) var(--l) / .8);
   text-shadow: 0 2px 10px hsla(var(--h) var(--s) 10% / .3);
 }

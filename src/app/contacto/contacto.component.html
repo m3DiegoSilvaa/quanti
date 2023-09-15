@@ -10,9 +10,33 @@
     <div class="second-container">
         <div class="box">
             <p style="text-align: center; font-size: 2em;">¿Preguntas? ¿Comentarios? ¡Envíanos un mensaje!</p>
-            <div class="form">
-
-            </div>
+            <form class="form">
+                <div class="row">
+                    <mat-form-field>
+                        <mat-label>Nombre de la Empresa</mat-label>
+                        <input matInput placeholder="Nombre de la Empresa">
+                      </mat-form-field>
+                    
+                      <mat-form-field>
+                        <mat-label>Correo Electrónico</mat-label>
+                        <input matInput placeholder="Correo Electrónico">
+                      </mat-form-field>
+                </div>
+                
+                <div class="row">
+                    <mat-form-field>
+                        <mat-label>Celular</mat-label>
+                        <input matInput placeholder="Celular">
+                      </mat-form-field>
+                    
+                      <mat-form-field>
+                        <mat-label>Motivo de Contacto</mat-label>
+                        <input matInput placeholder="Motivo de Contacto">
+                      </mat-form-field>
+                </div> 
+                <button mat-raised-button color="primary">Enviar</button>
+              </form>
+              
         </div>
     </div>
 </div>

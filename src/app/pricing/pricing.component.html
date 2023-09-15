@@ -1,3 +1,180 @@
 <div class="main">
-    
+    <div class="chart-container">
+        <!-- <div>
+            <label for="cantidadUsuarios">Selecciona la cantidad de usuarios:</label>
+            <select id="cantidadUsuarios" [(ngModel)]="selected" name="cantidadUsuarios">
+              <option *ngFor="let cantidad of cantidadesUsuarios" [value]="cantidad">{{ cantidad }}</option>
+            </select>
+          </div>
+          
+          <div *ngIf="selected">
+            <p>Has seleccionado {{ selected }} usuarios.</p>
+          </div>          
+    </div> -->
+    <mat-stepper [linear]="true" #stepper>
+        <mat-step [stepControl]="firstFormGroup" label="Selecciona tu paquete">
+        <div class="container-row-holder"> 
+            <form [formGroup]="firstFormGroup" class="container-row-holder">
+                <mat-radio-group formControlName="firstCtrl" class="container-row-holder">
+                    <div class="box-3">
+                        <h2 style="text-align: center;">Nivel de servicio: Básico</h2>
+                        <img src="https://cdn-icons-png.flaticon.com/128/2644/2644981.png" alt="" style="width: 10em; height: 10em;">
+                        <div class="button-container">
+                            <button class="button" (click)="toggleBox1()">Detalles</button>
+                        </div>
+                        <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible1 }">
+                            <button class="close-button" (click)="toggleBox1()">X</button>
+                            <div style="margin-right: 2em;">
+                                <h2>Vigilancia</h2>
+                                <ul>
+                                    <li>Monitoreo en tiempo real de eventos de seguridad.</li>
+                                    <li>Detección y alertas ante amenazas básicas.</li>
+                                    <li>Reportes mensuales de actividades y alertas.</li>
+                                    <li>Acceso a soporte técnico durantes horas hábiles.</li>
+                                </ul>                      
+                                <h2>Control Esencial</h2>
+                                <ul>
+                                    <li>Análisis de vulnerabilidades periódicas.</li>
+                                    <li>Detección de malware y ransomware avanzado.</li>
+                                    <li>Análisis de comportamiento de usuarios.</li>
+                                    <li>Alertas de seguridad priorizadas.</li>
+                                    <li>Soporte técnico extendido.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <mat-radio-button value="Basico">Nivel de servicio: Básico</mat-radio-button>
+                    </div>
+                    <div class="box-3">
+                        <h2 style="text-align: center;">Nivel de servicio intermedio </h2>
+                        <img src="https://cdn-icons-png.flaticon.com/128/755/755091.png" alt="" style="width: 10em; height: 10em;">
+                        <div class="button-container">
+                            <button class="button" (click)="toggleBox2()">Detalles</button>
+                        </div>
+                        <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible2 }">
+                            <button class="close-button" (click)="toggleBox2()">X</button>
+                            <div style="margin-right: 2em;">
+                            <h2>Defensa Continua</h2>
+                            <ul>
+                                <li>Monitoreo y análisis avanzado de tráfico de red.</li>
+                                <li>Detección y respuesta ante amenazas persistentes.</li>
+                                <li>Gestión y correlación avanzada de logs.</li>
+                                <li>Evaluación mensual de vulnerabilidades y reportes detallados.</li>
+                                <li>Alertas de seguridad con respuesta remota.</li>
+                                <li>Soporte técnico extendido con tiempos de respuesta mejorados.</li>
+                            </ul>                      
+                            <h2>Protección integral</h2>
+                            <ul>
+                                <li>Análisis de amenazas en tiempo real. </li>
+                                <li>Análisis de comportamiento de aplicaciones.</li>
+                                <li>Evaluación trimestral de vulnerabilidades con recomendaciones específicas.</li>
+                                <li>Alertas de seguridad con análisis de impacto.</li>
+                                <li>Soporte técnico 24/7.</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <mat-radio-button value="Intermedio">Nivel de servicio intermedio</mat-radio-button>
+                    </div>
+                    <div class="box-3">
+                        <h2 style="text-align: center;">Nivel de servicio: Premium</h2>
+                        <img src="https://cdn-icons-png.flaticon.com/128/2040/2040375.png" alt="" style="width: 10em; height: 10em;">
+                        <div class="button-container">
+                            <button class="button" (click)="toggleBox3()">Detalles</button>
+                        </div>
+                        <div class="box-hover" [ngClass]="{ 'show-box': isBoxVisible3 }">
+                            <button class="close-button" (click)="toggleBox3()">X</button>
+                            <div style="margin-right: 2em;">
+                            <h2>Seguridad Avanzada</h2>
+                            <ul>
+                                <li>Monitoreo exhaustivo de la red y sistemas críticos.</li>
+                                <li>Detección y respuesta proactiva ante amenazas complejas.</li>
+                                <li>Gestión integral de logs con análisis predictivo.</li>
+                                <li>Evaluación mensual de vulnerabilidades con parches recomendados.</li>
+                                <li>Alertas de seguridad con inteligencia contextual.</li>
+                                <li>Soporte técnico 24/7 con tiempos de respuesta prioritarios.</li>
+                            </ul>                      
+                            <h2>Defensa de Élite</h2>
+                            <ul>
+                                <li>Análisis de amenazas avanzadas y APT (Amenazas Persistentes Avanzadas).</li>
+                                <li>Respuesta inmediata a incidentes críticos.</li>
+                                <li>Evaluación continua de vulnerabilidades con parches y mitigaciones.</li>
+                                <li>Alertas de seguridad con correlación de eventos en tiempo real.</li>
+                                <li>Acceso a expertos en seguridad para consultas estratégicas.</li>
+                                <li>Soporte técnico 24/7 con prioridad máxima.</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <mat-radio-button value="Premium">Nivel de servicio: Premium</mat-radio-button>
+                    </div>
+                </mat-radio-group>
+            </form>
+        </div>
+        <div style="margin-top: 0.5em;">
+            <button mat-button matStepperNext (click)="selectItems()">Siguiente</button>
+        </div>
+          
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" label="Cotiza tus usuarios" style="background-color: transparent;">
+            <div class="chart-container2">
+                <div style="display: flex; justify-content: space-between; flex-direction: row;">
+                    <div>
+                        <h3>Nivel de Servicio:</h3>
+                        <span>{{firstFormGroup.get('firstCtrl')!.value}}</span>
+                    </div>
+                    <div>
+                        <h3>Cantidad de usuarios por paquete: </h3>
+                        <p>{{users}}</p> 
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <h3>Descripcion: </h3>
+                    <div  style="text-align: justify;">{{desc}}</div >
+                </div>
+                <div style="display: flex; justify-content: space-between; flex-direction: row;">
+                    <form [formGroup]="secondFormGroup">
+                        <div>
+                            <h3>Cantidad de Usuarios extras:</h3>
+                            <mat-form-field>
+                            <input matInput type="number" formControlName="cantidadUsuariosExtras" placeholder="Usuarios Extras">
+                            </mat-form-field>
+                            <span>{{ totalPrecioUsuariosExtras }}USD</span>
+                        </div>
+                    </form> 
+                    <div style="justify-content: center; display: flex; align-items: center;">
+                        <button mat-button matStepperPrevious>Atras</button>
+                        <button mat-button matStepperNext>Siguiente</button>
+                    </div>
+                </div>
+            </div>                           
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Finalizado</ng-template>
+          <div style="width: 100%;">
+            <h2 style="text-align: center;">Cotizacion Final</h2>
+            <h3>Nivel de Servicio:</h3>
+            <span>{{firstFormGroup.get('firstCtrl')!.value}}</span>
+          </div>
+          <div>
+            <h3>Precio por mes:</h3>
+            <span>{{price}}</span>
+          </div>
+          <div>
+            <h3>Precio por usuarios extras:</h3>
+            <span>{{totalPrecioUsuariosExtras}}</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; flex-direction: row;">
+            <div>
+                <h3>Precio por usuarios anual:</h3>
+                <span>{{totalPrecioUsuariosExtras + price* 12}}</span>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious>Atras</button>
+                <button mat-button (click)="stepper.reset()">Resetear</button>
+                <button mat-button routerLink="/contacto" routerLinkActive="active">Contactanos</button>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </mat-step>
+      </mat-stepper>
 </div>

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
 body {
     margin: 0; /* Asegura que no hay margen en el body */
     overflow: hidden; /* Oculta el scrollbar estándar del body */
+    font-family: 'Poppins', sans-serif;
 }
 
 .main{
@@ -10,6 +13,8 @@ body {
     overflow-y: scroll;
     scrollbar-width: none; /* Oculta el scrollbar estándar */
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .main::-webkit-scrollbar {
@@ -35,7 +40,7 @@ body {
     background-color: #0A0E1A;
     height: 25em;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
     display: flex;
     align-items: center;
 }
@@ -45,13 +50,13 @@ body {
     height: 25em;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center; 
 }
 
 .container-title {
     width: 70%;
-    margin-top: 1em;
+    margin-top: 5em;
     height: 5em;
     align-items: center;
     display: flex;
@@ -61,4 +66,66 @@ body {
 .container-title h1 {
     color: #65B4FD;
     font-size: 3em;
+}
+
+.box {
+    width: 30em;
+    height: 20em;
+    border-radius: 20px;
+}   
+
+.box h2 {
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+}
+
+.third-container{
+    background-color: #0A0E1A;
+    height: 30em;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-container{
+    background-color: #0A0E1A;
+    height: 25em;
+    flex-direction: row;
+    justify-content:space-evenly;
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.first-container1{
+    width: 30%;
+    height: 18em;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-container1 p {
+    text-align: justify;
+    font-size: 1.3em;
+    
+}
+
+.first-container1 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.first-container2{
+    width: 40%;
+    height: 20em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
